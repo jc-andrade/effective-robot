@@ -1,0 +1,42 @@
+# gdb script for Lab5
+set disassembly-flavor intel
+info functions
+# Show the program code
+disassemble main
+# Set a breakpoint on printf and begin running
+b printf
+run
+# Step the program over the call
+ni
+ni
+ni
+ni
+ni
+ni
+ni
+ni
+ni
+ni
+ni
+ni
+# Set breakpoint at MOV
+b mov
+run
+#Examine register before code executes
+info registers
+#Step program over MOV
+ni
+ni
+ni
+ni
+ni
+ni
+ni
+ni
+ni
+ni
+ni
+ni
+#Examine register to see that it changed
+info registers
+quit
